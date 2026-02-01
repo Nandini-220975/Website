@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop Now</title>
+        <style>
+            .container{
+                display:flex;
+                align-items: center;
+                justify-content: space-around;
+                padding:20px;
+            }
+            .left img{
+                border-radius:8px;
+            }
+            #buyBtn{
+                background-color: black;
+                color:white;
+                padding:12px 30px;
+                font-size:18px;
+                border:none;
+                border-radius: 25px;
+                transition:0.3s;
+
+            }
+            #discountBtn{
+                background-color: black;
+                color:white;
+                padding:12px 30px;
+                font-size:18px;
+                border:none;
+                border-radius: 25px;
+                transition:0.3s;
+            }
+        
+        </style>
+    </head>
+    <body></body>
+        <h1>Shop Now</h1>
+        <div class="container">
+            <div class="left">
+                <img src="mobiles.jpg" width="800" height="600"><br>
+            </div>
+            <div class="right">
+               <h1>Samsung Galaxy</h1><br>
+                    <h3>6.6 inch AMOLED Display</h3><br>
+                    <h3>1080MP Camere</h3><br>
+                    <h3>500mAh Battery</h3><br>
+                    <h3>5G Connectivity</h3><br>
+                    <h3>Fast Charging</h3>
+            </div>
+        </div>
+         
+        <button id ="buyBtn" onclick="mssg()">Buy Product</button>
+        <button id="discountBtn"> apply discount</button>
+        <script>
+            function mssg(){
+                let name=prompt("Enter your name:");
+                if(name){
+                    let confirmBuy=confirm("Confirm purchase?");
+                    if(confirmBuy){
+                        alert("Thank you "+ name +" for shopping!");
+                    }
+                }
+                else{
+                    alert("Purchase Cancelled");
+                }
+            }
+            const buyBtn=document.getElementById("buyBtn");
+            buyBtn.addEventListener("mouseover",function(){
+                buyBtn.style.backgroundColor="grey";
+            });
+            buyBtn.addEventListener("mouseout",function(){
+                buyBtn.style.backgroundColor="";
+            });
+            const product={
+                name:"Samsung Galaxy",
+                price:160000,
+                available:true,
+                applyDiscount:function(){
+                    this.price=this.price-(this.price*0.1);
+                    alert("10% Discount Applied!");
+                }
+            };
+            product.displayProduct();
+            const discountBtn=document.getElementById("discountBtn");
+            discountBtn.addEventListener("click",function(){
+                product.displayProduct();
+            });
+        </script>
+    </body>
+</html>
