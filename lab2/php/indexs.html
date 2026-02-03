@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Electro Mart</title>
+        <link rel="stylesheet" href="basics.css">
+        <link rel="icon" type="image/png" href="photo.png">
+        
+    </head>
+    <body>
+        <script>
+            const store="Electro Mart";
+            let storeStatus="open";
+            console.log(store);
+            console.log(storeStatus);
+        </script>
+        <header>
+            <h1>Electro Mart</h1>
+            <nav>
+                <a href="login.html" target="_blank">Login</a>
+                <a href="location.html" target="_blank">Location</a>
+                <a href="reviews.html" target="_blank">Reviews</a>
+                <a href="register.html" target="_blank">Register</a>
+            </nav>
+        </header>
+        <section class="real">
+            <h2>Latest Electronics at Best Prices</h2>
+            <p>Smartphones,Laptops,TVs & Accessories</p>
+        </section>
+        <section class="products">
+            <h2>Featured Produts</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <a href="shop.html"><img src="mobiles.jpg" height="150" width="100"></a>
+                    <h3>Samsung Galaxy S24</h3>
+                    <p>1,60,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="laptop.jpg" height="150" width="150">
+                    <h3>Macbook Pro</h3>
+                    <p>2,00,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="tv.jpg" height="150" width="150">
+                    <h3>Smart Tv</h3>
+                    <p>90,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="bluetooth.jpg" height="150" width="150">
+                    <h3>Bluetooth</h3>
+                    <p>1,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="watch.jpg" height="150" width="150">
+                    <h3>Smart Watch</h3>
+                    <p>1,500</p>
+                </div>
+            </div>
+            <video id="videos" width="500" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <table border="2">
+        <caption>Product List Table</caption>
+            <tr><th>Product Id</th><th>Product Name</th><th>Price</th><th>Stock Status</th><th>Rating</th></tr>
+            <tr><td>P1</td><td>Samsung Galaxy S24</td><td>1,60,000</td><td>50</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>P2</td><td>Smart Watch</td><td>1,500</td><td>20</td><td>⭐⭐⭐⭐</td></tr>
+            <tr><td>P3</td><td>Blutooth</td><td>1,000</td><td>35</td><td>⭐⭐⭐⭐⭐</td></tr>
+            <tr><td>P4</td><td>Samsung Tv</td><td>60,000</td><td>23</td><td>⭐⭐⭐</td></tr>
+            <tr><td>P1</td><td>Mac Book Pro</td><td>2,00,000</td><td>10</td><td>⭐⭐⭐⭐⭐</td></tr>
+            
+        </table>
+        <footer>
+            <p>Thank you for visiting</p>
+        </footer>
+
+    </body>
+    </html>
